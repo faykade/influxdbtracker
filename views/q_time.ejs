@@ -1,0 +1,13 @@
+<% include _partials/header %>
+<% include _partials/navigation %>
+  <div class="container-fluid">
+    <header>
+      <h1 class="page-title">Get time from now</h1>
+    </header>
+    <form id="getpage" name="getpage" action="/query/time" method="GET">
+      <label for="start">Start</label> <input type="number" name="start" placeholder="start of range" min="0" step="1" required></input></br>
+      <label for="end">End</label> <input type="number" name="end" placeholder="end of range" min="0" step="1" required></input></br>
+      <input type="submit" value="submit"></input></br>
+    </form>
+  </div>
+<% include _partials/footer %>

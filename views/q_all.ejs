@@ -1,0 +1,16 @@
+<% include _partials/header %>
+<% include _partials/navigation %>
+  <div class="container-fluid">
+    <header>
+      <h1 class="page-title">Get All</h1>
+    </header>
+    <form id="all" name="all" action="/query/all" method="GET">
+      <label>User</label> <input type="text" name="username" placeholder="username" required></input></br>
+      <label>Page</label> <input type="text" name="page" placeholder="page" required></input></br>
+      <label>Start</label> <input type="number" name="start" placeholder="start of range" min="0" step="1" required></input></br>
+      <label>End</label> <input type="number" name="end" placeholder="end of range" min="0" step="1" required></input></br>
+      <label>Limit</label> <input type="number" name="limit" placeholder="limit" min="0" required></input></br>
+      <input type="submit" value="submit"></input></br>
+    </form>
+  </div>
+<% include _partials/footer %>

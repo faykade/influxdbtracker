@@ -1,0 +1,13 @@
+<% include _partials/header %>
+<% include _partials/navigation %>
+  <div class="container-fluid">
+    <header>
+      <h1 class="page-title">Get a Page</h1>
+    </header>
+    <form id="getpage" name="getpage" action="/query/page" method="GET">
+      <input type="text" name="page" placeholder="page" required></input></br>
+      <input type="number" name="limit" placeholder="limit" min="0" required></input></br>
+      <input type="submit" value="submit"></input></br>
+    </form>
+  </div>
+<% include _partials/footer %>
